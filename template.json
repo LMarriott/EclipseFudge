@@ -1,61 +1,103 @@
 {
     "Actor": {
         "types": ["character"],
-        "templates": {},
+        "templates": {
+			"identity": {
+				"fullname": "",
+				"codename": ""
+			},
+			"profile": {
+				"gender": "",
+				"background": "",
+				"faction": "",
+				"occupation": ""
+			},
+			"morph": {
+				"type": "",
+				"model": "",
+				"scale": ""
+			},
+			"points": {
+				"moxie": 0,
+				"rez": 0,
+				"kcreds": 0
+			"attributes": {
+				"egoattr": {
+					"cog": {
+						"label": "Cognition",
+						"level": 1
+					},
+					"wil": {
+						"label": "Willpower",
+						"level": 1
+					},
+					"sav": {
+						"label": "Savvy",
+						"level": 1
+					},
+					"int": {
+						"label": "Intuition",
+						"level": 1
+					},
+				},
+				"morphattr": {
+					"som": {
+						"label": "Somatics",
+						"level": 1
+					},
+					"res": {
+						"label": "Resistance",
+						"level": 1
+					},
+					"per": {
+						"label": "Perception",
+						"level": 1
+					},
+					"ref": {
+						"label": "Reflexes",
+						"level": 1
+					},
+				}
+			}
+		},
         "character": {
-            "biography": {
-                "value": ""
-            },
-            "fatepoints": {
-                "current": 3,
-                "refresh": 3
-            }
+            "templates": ["identity", "profile", "morph", "points", "attributes"]
         }
     },
     "Item": {
-        "types": ["stress", "aspect", "consequence", "skill", "stunt", "extra"],
+        "types": ["trait", "weapon", "armour", "container", "misc"],
         "templates": {
             "base": {
-                "disabled": false,
-                "description": ""
-            }
+                "active": true,
+                "description": "",
+				"cost": 0,
+				"effect": ""
+				"survival": ""
+            },
+			"gear": {
+				"size": 1
+			}
         },
-        "stress": {
-            "templates": ["base"],
-            "size": 2,
-            "value": 0,
-            "labelType": 0,
-            "customLabel": ""
-        },
-        "aspect": {
-            "templates": ["base"],
-            "label": "",
-            "value": "",
-            "corrupted": false
-        },
-        "consequence": {
-            "templates": ["base"],
-            "label": "",
-            "value": "",
-            "icon": "",
-            "type": 0,
-            "active": false,
-            "boxAmount": 1,
-            "boxValues": 0
-        },
-        "skill": {
-            "templates": ["base"],
-            "rank": 0
-        },
-        "stunt": {
-            "templates": ["base"],
-            "shortDescription": "",
-            "collapsed": false
-        },
-        "extra": {
-            "templates": ["base"],
-            "shortDescription": "",
-            "collapsed": false
+        "trait": {
+			"templates": ["base"],
+			"type": "ego gift"
+		},
+		"weapon": {
+			"templates": ["base", "gear"],
+			"type": "melee",
+			"strength": 1
+		},
+		"armour": {
+			"templates": ["base", "gear"],
+			"armour": 1
+		},
+		"container": {
+			"templates": ["base", "gear"],
+			"capacity": 1
+		},
+		"misc": {
+			"templates": ["base", "gear"],
+			"type": "melee"
         }
     }
 }

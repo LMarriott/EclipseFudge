@@ -2,10 +2,30 @@
     "name": "EclipseFudge",
     "title": "Eclipse Fudge",
     "description": "An adaptation of the Eclipse Phase world to the Fudge rule set",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "author": "Squibit",
-    "scripts": ["system.js"],
-    "styles": [],
+	"minimumCoreVersion": "0.7.7",
+    "compatibleCoreVersion": "0.7.7",
+    "scripts": ["scripts/system.js"],
+	"esmodules": ["scripts/pending.mjs"]
+    "styles": [styles/pending.css],
+	"packs": [
+		{
+			"name": "characters"
+			"label": "Characters"
+			"system": "EclipseFudge"
+			"module": "EclipseFudge"
+			"path": "packs/characters.db"
+			"entity": "Actor"
+		},
+		{
+			"name": "items"
+			"label": "Items"
+			"system": "EclipseFudge"
+			"module": "EclipseFudge"
+			"path": "packs/items.db"
+			"entity": "Item"
+		},
     "languages": [
         {
             "lang": "en",
@@ -13,10 +33,12 @@
             "path": "languages/en.json"
         }
     ],
-    "minimumCoreVersion": "0.7.7",
-    "compatibleCoreVersion": "0.7.7",
-    "socket": true,
-    "url": "https://notavailable.com",
-    "manifest": "https://notavailable.com",
-    "download": "https://notavailable.com"
+    "socket": false,
+	"initiative": "4df",
+	"gridDistance": 2,
+	"gridUnit" m,
+	"primaryTokenAttribute": "resources.stress"
+	"secondaryToeknAttribute": "resources.penalty"
+    "url": "https://github.com/LMarriott/EclipseFudge",
+    "manifest": "https://github.com/LMarriott/EclipseFudge/blob/main/system.json"
 }
