@@ -1,0 +1,22 @@
+{
+    "name": "EclipseFudge",
+    "title": "Eclipse Fudge",
+    "description": "An adaptation of the Eclipse Phase world to the Fudge rule set",
+    "version": "0.1.0",
+    "author": "Squibit",
+    "scripts": ["system.js"],
+    "styles": [],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        }
+    ],
+    "minimumCoreVersion": "0.7.7",
+    "compatibleCoreVersion": "0.7.7",
+    "socket": true,
+    "url": "https://notavailable.com",
+    "manifest": "https://notavailable.com",
+    "download": "https://notavailable.com"
+}

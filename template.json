@@ -1,0 +1,61 @@
+{
+    "Actor": {
+        "types": ["character"],
+        "templates": {},
+        "character": {
+            "biography": {
+                "value": ""
+            },
+            "fatepoints": {
+                "current": 3,
+                "refresh": 3
+            }
+        }
+    },
+    "Item": {
+        "types": ["stress", "aspect", "consequence", "skill", "stunt", "extra"],
+        "templates": {
+            "base": {
+                "disabled": false,
+                "description": ""
+            }
+        },
+        "stress": {
+            "templates": ["base"],
+            "size": 2,
+            "value": 0,
+            "labelType": 0,
+            "customLabel": ""
+        },
+        "aspect": {
+            "templates": ["base"],
+            "label": "",
+            "value": "",
+            "corrupted": false
+        },
+        "consequence": {
+            "templates": ["base"],
+            "label": "",
+            "value": "",
+            "icon": "",
+            "type": 0,
+            "active": false,
+            "boxAmount": 1,
+            "boxValues": 0
+        },
+        "skill": {
+            "templates": ["base"],
+            "rank": 0
+        },
+        "stunt": {
+            "templates": ["base"],
+            "shortDescription": "",
+            "collapsed": false
+        },
+        "extra": {
+            "templates": ["base"],
+            "shortDescription": "",
+            "collapsed": false
+        }
+    }
+}
